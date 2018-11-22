@@ -325,6 +325,8 @@
         });
         if (msg.block.time) {
           this.lastBlockTime = Math.ceil(Number(msg.block.time) / 1000);
+        } else {
+          this.lastBlockTime = 0;
         }
       },
       node (msg) {
